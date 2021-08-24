@@ -43,6 +43,7 @@ text-decoration-color: #6495ED;
 img {
   float: right;
   padding-left: 15px;
+  border: 15px solid #000000;
 }
 
 h1 {
