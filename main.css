@@ -9,8 +9,6 @@ body {
 .topnav {
   overflow: hidden;
   background-color: #181818;
-  margin-right: 300px;
-  margin-left: 300px;
 }
 
 .topnav a {
@@ -75,8 +73,6 @@ p {
 
 .introduction {
   margin-top: 100px;
-  margin-right: 300px;
-  margin-left: 300px;
 }
 
 .button {
