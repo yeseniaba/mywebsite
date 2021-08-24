@@ -33,6 +33,8 @@ float:right;
 color: white;
 padding: 10px;
 margin: 0px;
+text-decoration: overline;
+text-decoration-color: #6495ED;
 }
 
 img {
