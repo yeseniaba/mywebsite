@@ -27,11 +27,10 @@ body {
 }
 
 .topnav a.active {
-  background-color: #6495ED;
   color: white;
   text-decoration: underline;
   text-decoration-color: #6495ED;
-  text-decoration-thickness: 3px;
+  text-decoration-thickness: 5px;
   
 }
 
