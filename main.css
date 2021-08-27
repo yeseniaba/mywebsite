@@ -94,8 +94,7 @@ p {
 
 .content {
   background-color: #f2f2f2;
-  margin-right: 300px;
-  margin-left: 300px;
+  padding: 10px;
 }
 
 .content > h2 {
