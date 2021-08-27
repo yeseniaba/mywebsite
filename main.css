@@ -91,3 +91,10 @@ p {
   cursor: pointer;
   border-radius: 20px;
 }
+
+.content {
+  background-color: #f2f2f2;
+  margin-right: 300px;
+  margin-left: 300px;
+  margin: 60px;
+}
