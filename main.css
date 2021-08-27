@@ -95,6 +95,9 @@ p {
 .content {
   background-color: #f2f2f2;
   padding: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-top: 50px;
 }
 
 .content > h2 {
