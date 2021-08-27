@@ -114,3 +114,8 @@ p {
   font-size: 18px;
   color: black;
 }
+
+.content > img {
+  float: none;
+  margin-left: none;
+}
