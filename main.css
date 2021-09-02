@@ -12,10 +12,9 @@ li {
   padding: 10px 0px;
 }
 
-img {
-  border: none;
-  height: 24px;
-  width: 24px;
+img { 
+  float: right;
+  border: 20px solid #000000;
 }
 
 .topnav {
