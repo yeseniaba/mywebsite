@@ -9,6 +9,7 @@ body {
 li {
   line-height: 30px;
   color: #808080;
+  padding: 10px 0px;
 }
 
 .topnav {
