@@ -119,3 +119,8 @@ p {
   float: none;
   margin-left: none;
 }
+
+.content > p {
+  font-size: 18px;
+  color: black;
+}
