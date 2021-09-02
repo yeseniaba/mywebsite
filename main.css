@@ -6,6 +6,12 @@ body {
   margin-left: 300px;
 }
 
+li {
+  line-height: 5px;
+  line-style: none;
+  color: #808080;
+}
+
 .topnav {
   overflow: hidden;
   background-color: #181818;
