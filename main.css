@@ -14,7 +14,8 @@ li {
 
 img { 
   float: right;
-  border: 20px solid #000000;
+  border: 30px solid #000000;
+  margin-bottom: 50px;
 }
 
 .topnav {
