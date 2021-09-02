@@ -54,12 +54,6 @@ text-decoration: overline;
 text-decoration-color: #6495ED;
 }
 
-.introduction > img {
-  float: right;
-  margin-left: 15px;
-  border: 20px solid #000000;
-}
-
 h1 {
   font-size: 40px;
   color: white;
