@@ -12,6 +12,12 @@ li {
   padding: 10px 0px;
 }
 
+li > img {
+  border: none;
+  height: 24px;
+  width: 24px;
+}
+
 .topnav {
   overflow: hidden;
   background-color: #181818;
