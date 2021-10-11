@@ -12,6 +12,10 @@ li {
   padding: 10px 0px;
 }
 
+img {
+  float: right;
+}
+
 
 .topnav {
   overflow: hidden;
