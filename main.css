@@ -17,6 +17,7 @@ li {
 .topnav {
   overflow: hidden;
   background-color: #181818;
+  text-align: center;
 }
 
 .topnav a {
