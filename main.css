@@ -49,7 +49,7 @@ li {
 
 .topnav > p {
 float:right;
-color: white;
+color: black;
 padding: 10px;
 margin: 0px;
 text-decoration: overline;
@@ -58,7 +58,7 @@ text-decoration-color: #6495ED;
 
 h1 {
   font-size: 40px;
-  color: white;
+  color: black;
 }
 
 h2 {
