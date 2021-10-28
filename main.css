@@ -1,14 +1,14 @@
 body {
   margin: 60px;
   font-family: Arial, Helvetica, sans-serif;
-  background-color: #181818;
+  background-color: oldlace;
   margin-right: 300px;
   margin-left: 300px;
 }
 
 li {
-  line-height: 25px;
-  color: #808080;
+  line-height: 28px;
+  color: black;
   padding: 10px 0px;
 }
 
@@ -16,7 +16,7 @@ li {
 
 .topnav {
   overflow: hidden;
-  background-color: #181818;
+  background-color: oldlace;
   text-align: center;
   float: none;
   position: absolute;
