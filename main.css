@@ -63,22 +63,22 @@ h1 {
 
 h2 {
   font-size: 35px;
-  color: #f7f7f7;
+  color: black;
 }
 
 h3 {
   font-size: 25px;
-   color: #f7f7f7;
+   color: #black;
 }
 
 h4 { 
   font-size: 18px;
-   color: #f7f7f7;
+   color: black;
 }
 
 p {
  font-size: 16px;
- color: #f7f7f7;
+ color: black;
 }
 
 .introduction {
@@ -101,7 +101,7 @@ p {
 }
 
 .content {
-  background-color: #f2f2f2;
+  background-color: oldlace;
   padding: 10px;
   padding-left: 20px;
   padding-right: 20px;
