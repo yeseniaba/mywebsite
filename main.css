@@ -63,12 +63,12 @@ h1 {
 
 h2 {
   font-size: 35px;
-  color: black;
+  color: #997a8d;
 }
 
 h3 {
   font-size: 25px;
-   color: #black;
+   color: #5c6d64;
 }
 
 h4 { 
@@ -110,12 +110,12 @@ p {
 
 .content > h2 {
   font-size: 35px;
-  color: black;
+  color: #997a8d;
 }
 
 .content > h3 {
   font-size: 25px;
-  color: black;
+  color: #5c6d64;
 }
 
 .content > h4 { 
@@ -131,5 +131,5 @@ p {
 .content > p {
   font-size: 16px;
   line-height: 30px;
-  color: #808080;
+  color: black;
 }
