@@ -27,6 +27,7 @@ li {
     font-weight: 700;
     border-right: 4px solid orange;
     box-sizing: border-box;
+    color: #59383c;
 }
 
 @keyframes typing {
