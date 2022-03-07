@@ -1,7 +1,7 @@
 body {
   margin: auto;
   font-family: Arial, Helvetica, sans-serif;
-  background-color: oldlace;
+  background-color: white;
 
 }
 
@@ -64,6 +64,7 @@ p {
   margin: 4px 2px;
   cursor: pointer;
   border-radius: 20px;
+  font: white;
 }
 
 .content {
