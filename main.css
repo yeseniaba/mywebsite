@@ -31,6 +31,12 @@ li {
   height: 500px;
 }
 
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
 
 h1 {
   font-size: 30px;
