@@ -17,7 +17,7 @@ li {
   align-items: center;
   padding-top: 200px;
   gap: 4px;
-  grid-auto-flow: column;
+  grid-auto-flow: row;
 }
 
 
