@@ -17,9 +17,14 @@ li {
   justify-content: center;
   align-items: center;
   padding-top: 150px;
-  gap: 4px;
+  gap: 100px;
   grid-auto-flow: row;
   justify-items: start;
+}
+
+.item {
+  border: solid;
+  border-color: green;
 }
 
 
