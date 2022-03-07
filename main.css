@@ -38,7 +38,9 @@ p {
  line-height: 28px;
 }
 
-
+.main {
+  margin: auto;
+}
 
 .button {
   background-color: #6495ED; 
