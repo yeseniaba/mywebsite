@@ -13,6 +13,11 @@ li {
 
 .wrapper {
   display: grid;
+  justify-content: center;
+  align-items: center;
+  padding-top: 200px;
+  gap: 4px;
+  grid-auto-flow: column;
 }
 
 
