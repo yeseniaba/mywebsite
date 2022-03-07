@@ -29,7 +29,7 @@ h1 {
 
 h2 {
   font-size: 35px;
-  color: #997a8d;
+  color: #007676;
 }
 
 h3 {
@@ -53,9 +53,9 @@ p {
 }
 
 .button {
-  background-color: #6495ED; 
+  background-color: #003A3A; 
   border: none;
-  color: #f2f2f2;
+  color: white;
   padding: 14px 16px;
   text-align: center;
   text-decoration: none;
