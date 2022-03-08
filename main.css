@@ -26,13 +26,13 @@ li {
 
 .item {
   border: solid;
-  border-color: #808000;
+  border-color: #800080;
   padding: 80px;
   width: 300px;
   height: 500px;
   border-radius: 12px;
   background-color: white;
-  box-shadow: 5px 5px 5px #808000;
+  border-top: 20px solid #800080;
 }
 
 .center {
