@@ -32,7 +32,8 @@ li {
   height: 500px;
   border-radius: 12px;
   background-color: white;
-  border-top: 20px solid #800080;
+  border-top: 30px solid #800080;
+  border-bottom: 10px solid #800080;
 }
 
 .center {
