@@ -5,13 +5,14 @@ body
 {
     font-family: 'Helvetica', 'Arial', sans-serif;
     margin: 0px;
+ 
 
 }
 
 a {  
 	color: #339FFF;
 	text-decoration: none;
-	font-size: 1vw;
+	font-size: 12px;
 
 
 }
@@ -24,42 +25,49 @@ img {
 
 }
 
+h1 > p {
+  font-size: 20px;
+}
 
 p {
-/*	font-size: 12px;*/
+	font-size: 12px;
 	text-align: left;
 	padding: 2px;
-	margin-left: 0px;
-  font-size: 1vw;
-	line-height: 30px;
+	margin: 0px;
+
 
 }
 
 li {
-/*  font-size: 12px;*/
+ font-size: 12px;
   text-align: left;
-  font-size: 1vw;
-	line-height: 30px;
+  /* font-size: 1vw; */
+
 
 }
 
-.flex-header {
+ul {
+  font-size: 12px;
+}
+
+header {
+  background-color: #00735C;
+  height: 100px;
   display: flex;
-  background-color: #233659;
-  height: 55px;
-  justify-content: flex-start;
+  align-items: center;
+}
+
+header > p {
+  font-size: 20px;
+  text-align: left;
+  padding: 15px;
+  color: white;
+  font-weight: heavy;
 }
 
 
-.flex-header > div {
-  background-color: #233659;
-  margin: 0px;
-  padding-top: 10px;
-  padding-left: 0px;
-  font-size: 18px;
-  text-align: center;
-  line-height: 2;
-  color: white;
+h1 {
+  padding-top: 20px;
 }
 
 
@@ -153,7 +161,7 @@ li {
   display: flex;
   background-color: white;
   justify-content: center;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
   padding: 100px;
   padding-top: 20px;
   flex-direction: row;
@@ -169,8 +177,9 @@ li {
 .flex-container > div {
   background-color: white;
   margin: 10px;
-  padding: 5%;
-  padding-top: 5%;
+  padding: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
   font-size: 25px;
   padding-bottom: 0px;
   width: 45%;
