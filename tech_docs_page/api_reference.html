@@ -11,7 +11,7 @@
 </head>
 <header class="header" id="myHeader">
 	<a href="docs_landing.html">&Omega; OMEGA for Developers</a>
-    <a href="docs_landing.html"><button class="button">Docs</button></a>
+    <a href="docs_landing.html"><button class="button">Go to Docs</button></a>
    
   
 </header>
@@ -28,12 +28,12 @@
         <a href="#voice"><b>OmegaVoice</b></a>
  
         <a href="#vcreate">/create</a>
-        <a href="#vcreate">/delete</a>
+        <a href="#vdelete">/delete</a>
        
     
         <a href="#identity"><b>OmegaIdentity</b></a>
         <a href="#icreate">/create</a>
-        <a href="idelete">/delete</a>
+        <a href="#idelete">/delete</a>
     
   
         <a href="#pay"><b>OmegaPay</b></a>
@@ -47,60 +47,84 @@
 
 <div class="columnB content">
   
-        <h1>API Reference</h1>
+        <h1 id="reference">API Reference</h1>
+        <p class="text">The API Reference includes all the technical details requires to integrate with various Omega API services. 
+            To make a suggestion, visit our open-source documentation on GitHub [link here].</p>
+       
         <hr>
+<!-- // OmegaVoice Section -->
+
         <h2 id="voice" class="add-pad">OmegaVoice </h2>
         <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore 
             et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip 
             ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu 
             fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt 
             mollit anim id est laborum.</p>
-
-        <h3 id="vcreate" class="add-pad">/create</h3>
+    
+        <h3 id="vcreate" class="add-pad">www.omega.com/voice/create</h3>
         <p class="text">Create a voice message in the Omega system</p>
         <table class="param-table">
             <tr>
             <th>Parameter</th>
+            <th>Data Type</th>
             <th>Description</th>
             </tr>
+
             <tr>
-                <td><div class="code-snippet">name</div></td>
-                <td>The name assigned to the voice message. Omega recommends using a descriptive or custom name.</td>
-            </tr>
-            <tr>
-                <td><div class="code-snippet">country</div></td>
-                <td>Country where the voice message is created.</td>
+                <td><div class="code-snippet">country</div>
+                    <p class="default">Default is US</p></td>
+                <td>String</td>
+                <td>Country where the voice message is created. This field only accepts <a href="https://www.w3schools.com/tags/ref_country_codes.asp">two-character ISO country codes. </a></td>
             </tr>
 
             <tr>
                 <td><div class="code-snippet">home_details</div></td>
-                <td>This object includes the following child attributes:
+                <td>Object</td>
+                <td>This object includes the following home-related child attributes:
                     <ul>
-                        <li><div class="code-snippet">zip_code</div></li>
-                        <li><div class="code-snippet">city</div></li>
+                        <li><div class="code-snippet">city</div> (String)</li>
+                        <li><div class="code-snippet">zip_code</div> (Number)</li>
                     </ul> </td>
             </tr>
 
+            <tr>
+                <td><div class="code-snippet">name</div>
+                <p class="default">Default is null</p>
+                </td>
+                <td>String</td>
+                <td>The name assigned to the voice message. Omega recommends using a descriptive or custom name.</td>
+            </tr>
         </table>
         <h4>Request Example</h4>
         <div class="code-block">
-            <pre>function myFunction(x) {
-                    x.classList.toggle("change");
-                }</pre>
+            <pre>
+curl https://omega.com/voice/create \
+-d country="CA" \
+-d name="Business Voicemail" \
+            </pre>
                     </div>
         <h3 id="vdelete" class="add-pad">/delete</h3>
         <p class="text">Delete a voice message in the Omega system</p>
         <table class="param-table">
             <tr>
             <th>Parameter</th>
+            <th>Data Type</th>
             <th>Description</th>
             </tr>
             <tr>
-                <td><div class="code-snippet">name</div></td>
+                <td>
+                    <div class="code-snippet">name</div>
+                    <p>Required</p>
+                    <p class="default">Default is null</p>
+                </td>
+                <td>String</td>
                 <td>The name assigned to the voice message. Omega recommends using a descriptive or custom name.</td>
             </tr>
             <tr>
-                <td><div class="code-snippet">country</div></td>
+                <td><div class="code-snippet">country</div>
+                    <p class="default">Default is US</p>
+                </td>
+                <td>String</td>
                 <td>Country where the voice message is created.</td>
             </tr>
         </table>
@@ -110,8 +134,11 @@
                     x.classList.toggle("change");
                 }</pre>
                     </div>
+<a href="#reference"><button class="button">Back to top</button></a>
+<hr>
 
-    
+<!-- // OmegaIdentity Section    -->
+
         <h2 id="identity" class="add-pad">OmegaIdentity</h2>
         <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore 
             et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip 
@@ -123,14 +150,22 @@
             <table class="param-table">
                 <tr>
                 <th>Parameter</th>
+                <th>Data Type</th>
                 <th>Description</th>
                 </tr>
                 <tr>
-                    <td><div class="code-snippet">name</div></td>
+                    <td><div class="code-snippet">name</div>
+                    <p>Required</p>
+                    <p class="default">Default is null</p>
+                    </td>
+                    <td>String</td>
                     <td>The name assigned to the voice message. Omega recommends using a descriptive or custom name.</td>
                 </tr>
                 <tr>
-                    <td><div class="code-snippet">country</div></td>
+                    <td><div class="code-snippet">country</div>
+                    <p class="default">Default is US</p>
+                    </td>
+                    <td>String</td>
                     <td>Country where the voice message is created.</td>
                 </tr>
             </table>
@@ -145,16 +180,23 @@
             <table class="param-table">
                 <tr>
                 <th>Parameter</th>
+                <th>Data Type</th>
                 <th>Description</th>
                 </tr>
                 <tr>
-                    <td><div class="code-snippet">name</div></td>
-                    <td>The name assigned to the voice message. Omega recommends using a descriptive or custom name.</td>
-                </tr>
-                <tr>
-                    <td><div class="code-snippet">country</div></td>
+                    <td><div class="code-snippet">country</div>
+                    <p class="default">Default is US</p>
+                </td>
+                <td>String</td>
                     <td>Country where the voice message is created.</td>
                 </tr>
+                <tr>
+                    <td><div class="code-snippet">name</div>
+                    <p class="default">Default is null</p></td>
+                    <td>String</td>
+                    <td>The name assigned to the voice message. Omega recommends using a descriptive or custom name.</td>
+                </tr>
+
             </table>
             <h4>Request Example</h4>
             <div class="code-block">
@@ -162,6 +204,9 @@
                         x.classList.toggle("change");
                     }</pre>
                         </div>
+<a href="#reference"><button class="button">Back to top</button></a>
+<hr>
+                    <!-- // OmegaPay Section -->
 
         <h2 id="pay" class="add-pad">OmegaPay</h2>
         <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore 
@@ -169,21 +214,28 @@
             ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu 
             fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt 
             mollit anim id est laborum.</p>
+
             <h3 id="pcreate" class="add-pad">/create</h3>
             <p class="text">Make a payment using the Omega system</p>
             <table class="param-table">
                 <tr>
                 <th>Parameter</th>
+                <th>Data Type</th>
                 <th>Description</th>
                 </tr>
                 <tr>
-                    <td><div class="code-snippet">name</div></td>
-                    <td>The name assigned to the voice message. Omega recommends using a descriptive or custom name.</td>
-                </tr>
-                <tr>
-                    <td><div class="code-snippet">country</div></td>
+                    <td><div class="code-snippet">country</div>
+                        <p class="default">Default is US</p></td>
+                    <td>String</td>
                     <td>Country where the voice message is created.</td>
                 </tr>
+                <tr>
+                    <td><div class="code-snippet">name</div>
+                        <p class="default">Default is null</p></td>
+                    <td>String</td>
+                    <td>The name assigned to the voice message. Omega recommends using a descriptive or custom name.</td>
+                </tr>
+
             </table>
             <h4>Request Example</h4>
             <div class="code-block">
@@ -196,16 +248,22 @@
             <table class="param-table">
                 <tr>
                 <th>Parameter</th>
+                <th>Data Type</th>
                 <th>Description</th>
                 </tr>
                 <tr>
-                    <td><div class="code-snippet">name</div></td>
-                    <td>The name assigned to the voice message. Omega recommends using a descriptive or custom name.</td>
-                </tr>
-                <tr>
-                    <td><div class="code-snippet">country</div></td>
+                    <td><div class="code-snippet">country</div>
+                        <p class="default">Default is US</p></td>
+                    <td>String</td>
                     <td>Country where the voice message is created.</td>
                 </tr>
+                <tr>
+                    <td><div class="code-snippet">name</div>
+                        <p class="default">Default is null</p></td>
+                    <td>String</td>
+                    <td>The name assigned to the voice message. Omega recommends using a descriptive or custom name.</td>
+                </tr>
+
             </table>
             <h4>Request Example</h4>
             <div class="code-block">
@@ -218,16 +276,22 @@
             <table class="param-table">
                 <tr>
                 <th>Parameter</th>
+                <td>Data Type</td>
                 <th>Description</th>
                 </tr>
                 <tr>
-                    <td><div class="code-snippet">name</div></td>
-                    <td>The name assigned to the voice message. Omega recommends using a descriptive or custom name.</td>
-                </tr>
-                <tr>
-                    <td><div class="code-snippet">country</div></td>
+                    <td><div class="code-snippet">country</div>
+                        <p class="default">Default is US</p></td>
+                    <td>String</td>
                     <td>Country where the voice message is created.</td>
                 </tr>
+                <tr>
+                    <td><div class="code-snippet">name</div>
+                        <p class="default">Default is null</p></td>
+                    <td>String</td>
+                    <td>The name assigned to the voice message. Omega recommends using a descriptive or custom name.</td>
+                </tr>
+
             </table>
             <h4>Request Example</h4>
             <div class="code-block">
@@ -235,7 +299,7 @@
                         x.classList.toggle("change");
                     }</pre>
                         </div>
-
+<a href="#reference"><button class="button">Back to top</button></a>
     
 </div>
 <div class="footer">
