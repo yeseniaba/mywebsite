@@ -29,7 +29,7 @@ li {
   border-color: #14213D;
   padding: 40px 80px 80px 80px;
   width: 350px;
-  height: 350px;
+  height: auto;
   border-radius: 12px;
   background-color: white;
   border-top: 30px solid #14213D;
