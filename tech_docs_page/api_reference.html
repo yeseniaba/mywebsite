@@ -12,77 +12,234 @@
 <header class="header" id="myHeader">
 	<a href="docs_landing.html">&Omega; OMEGA for Developers</a>
     <a href="docs_landing.html"><button class="button">Docs</button></a>
+   
+  
 </header>
 <div class="spacer">
     &nbsp;
 </div>
 <body>
-
-<div class="column">
-    <div class="sidenav">
-        <a href="#about">OmegaVoice</a>
-        <p>CREATE</p>
-        <p>/example</p>
-        <p>/example</p>
-       
-        <p>REMOVE</p>
-        <p>/example</p>
-        <p>/example</p>
-        <a href="#services">OmegaIdentity</a>
-        <p>CREATE</p>
-        <p>/example</p>
-        <p>/example</p>
-
-        <p>MANAGE</p>
-        <p>/example</p>
-        <p>/example</p>
+   
   
-        <a href="#">OmegaPay</a>
-        <p>CREATE</p>
-        <p>/example</p>
-        <p>/example</p>
-        <p>REMOVE</p>
-        <p>/example</p>
-        <p>/example</p>
+<div class="column">
+  
+    <div class="sidenav">
+        <h1>API Reference</h1>
+        <a href="#voice"><b>OmegaVoice</b></a>
+ 
+        <a href="#vcreate">/create</a>
+        <a href="#vcreate">/delete</a>
+       
+    
+        <a href="#identity"><b>OmegaIdentity</b></a>
+        <a href="#icreate">/create</a>
+        <a href="idelete">/delete</a>
+    
+  
+        <a href="#pay"><b>OmegaPay</b></a>
+     
+        <a href="#pcreate">/create</a>
+        <a href="#pupdate">/update</a>
+        <a href="#pdelete">/delete</a>
+      
       </div>
 </div>
 
 <div class="columnB content">
   
-        <h1>About</h1>
+        <h1>API Reference</h1>
+        <hr>
+        <h2 id="voice" class="add-pad">OmegaVoice</h2>
         <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore 
             et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip 
             ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu 
             fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt 
             mollit anim id est laborum.</p>
 
-            <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore 
-                et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip 
-                ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu 
-                fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt 
-                mollit anim id est laborum.</p>
+        <h3 id="vcreate" class="add-pad">/create</h3>
+        <p class="text">Create a voice message in the Omega system</p>
+        <table class="param-table">
+            <tr>
+            <th>Parameter</th>
+            <th>Description</th>
+            </tr>
+            <tr>
+                <td><div class="code-snippet">name</div></td>
+                <td>The name assigned to the voice message. Omega recommends using a descriptive or custom name.</td>
+            </tr>
+            <tr>
+                <td><div class="code-snippet">country</div></td>
+                <td>Country where the voice message is created.</td>
+            </tr>
 
-                <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore 
-                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip 
-                    ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu 
-                    fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt 
-                    mollit anim id est laborum.</p>
+            <tr>
+                <td><div class="code-snippet">home_details</div></td>
+                <td>This object includes the following child attributes:
+                    <ul>
+                        <li><div class="code-snippet">zip_code</div></li>
+                        <li><div class="code-snippet">city</div></li>
+                    </ul> </td>
+            </tr>
 
-                    <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore 
-                        et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip 
-                        ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu 
-                        fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt 
-                        mollit anim id est laborum.</p>
+        </table>
+        <h4>Request Example</h4>
         <div class="code-block">
-<pre>function myFunction(x) {
-        x.classList.toggle("change");
-    }</pre>
-        </div>
-        <h1 id="services">Services</h1>
+            <pre>function myFunction(x) {
+                    x.classList.toggle("change");
+                }</pre>
+                    </div>
+        <h3 id="vdelete" class="add-pad">/delete</h3>
+        <p class="text">Delete a voice message in the Omega system</p>
+        <table class="param-table">
+            <tr>
+            <th>Parameter</th>
+            <th>Description</th>
+            </tr>
+            <tr>
+                <td><div class="code-snippet">name</div></td>
+                <td>The name assigned to the voice message. Omega recommends using a descriptive or custom name.</td>
+            </tr>
+            <tr>
+                <td><div class="code-snippet">country</div></td>
+                <td>Country where the voice message is created.</td>
+            </tr>
+        </table>
+        <h4>Request Example</h4>
+        <div class="code-block">
+            <pre>function myFunction(x) {
+                    x.classList.toggle("change");
+                }</pre>
+                    </div>
+
+    
+        <h2 id="identity" class="add-pad">OmegaIdentity</h2>
+        <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore 
+            et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip 
+            ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu 
+            fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt 
+            mollit anim id est laborum.</p>
+            <h3 id="icreate" class="add-pad">/create</h3>
+            <p class="text">Create a new identity profile in the Omega system</p>
+            <table class="param-table">
+                <tr>
+                <th>Parameter</th>
+                <th>Description</th>
+                </tr>
+                <tr>
+                    <td><div class="code-snippet">name</div></td>
+                    <td>The name assigned to the voice message. Omega recommends using a descriptive or custom name.</td>
+                </tr>
+                <tr>
+                    <td><div class="code-snippet">country</div></td>
+                    <td>Country where the voice message is created.</td>
+                </tr>
+            </table>
+            <h4>Request Example</h4>
+            <div class="code-block">
+                <pre>function myFunction(x) {
+                        x.classList.toggle("change");
+                    }</pre>
+                        </div>
+            <h3 id="idelete" class="add-pad">/delete</h3>
+            <p class="text">Permanently delete an identity profile in the Omega system</p>
+            <table class="param-table">
+                <tr>
+                <th>Parameter</th>
+                <th>Description</th>
+                </tr>
+                <tr>
+                    <td><div class="code-snippet">name</div></td>
+                    <td>The name assigned to the voice message. Omega recommends using a descriptive or custom name.</td>
+                </tr>
+                <tr>
+                    <td><div class="code-snippet">country</div></td>
+                    <td>Country where the voice message is created.</td>
+                </tr>
+            </table>
+            <h4>Request Example</h4>
+            <div class="code-block">
+                <pre>function myFunction(x) {
+                        x.classList.toggle("change");
+                    }</pre>
+                        </div>
+
+        <h2 id="pay" class="add-pad">OmegaPay</h2>
+        <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore 
+            et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip 
+            ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu 
+            fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt 
+            mollit anim id est laborum.</p>
+            <h3 id="pcreate" class="add-pad">/create</h3>
+            <p class="text">Make a payment using the Omega system</p>
+            <table class="param-table">
+                <tr>
+                <th>Parameter</th>
+                <th>Description</th>
+                </tr>
+                <tr>
+                    <td><div class="code-snippet">name</div></td>
+                    <td>The name assigned to the voice message. Omega recommends using a descriptive or custom name.</td>
+                </tr>
+                <tr>
+                    <td><div class="code-snippet">country</div></td>
+                    <td>Country where the voice message is created.</td>
+                </tr>
+            </table>
+            <h4>Request Example</h4>
+            <div class="code-block">
+                <pre>function myFunction(x) {
+                        x.classList.toggle("change");
+                    }</pre>
+                        </div>
+            <h3 id="pupdate" class="add-pad">/update</h3>
+            <p class="text">Update payment information</p>
+            <table class="param-table">
+                <tr>
+                <th>Parameter</th>
+                <th>Description</th>
+                </tr>
+                <tr>
+                    <td><div class="code-snippet">name</div></td>
+                    <td>The name assigned to the voice message. Omega recommends using a descriptive or custom name.</td>
+                </tr>
+                <tr>
+                    <td><div class="code-snippet">country</div></td>
+                    <td>Country where the voice message is created.</td>
+                </tr>
+            </table>
+            <h4>Request Example</h4>
+            <div class="code-block">
+                <pre>function myFunction(x) {
+                        x.classList.toggle("change");
+                    }</pre>
+                        </div>
+            <h3 id="pdelete" class="add-pad">/delete</h3>
+            <p class="text">Delete a payment method</p>
+            <table class="param-table">
+                <tr>
+                <th>Parameter</th>
+                <th>Description</th>
+                </tr>
+                <tr>
+                    <td><div class="code-snippet">name</div></td>
+                    <td>The name assigned to the voice message. Omega recommends using a descriptive or custom name.</td>
+                </tr>
+                <tr>
+                    <td><div class="code-snippet">country</div></td>
+                    <td>Country where the voice message is created.</td>
+                </tr>
+            </table>
+            <h4>Request Example</h4>
+            <div class="code-block">
+                <pre>function myFunction(x) {
+                        x.classList.toggle("change");
+                    }</pre>
+                        </div>
+
     
 </div>
 <div class="footer">
-    <p>© 2022 OMEGA</p>
+    <p>© 2022 &Omega; OMEGA</p>
   </div>
 
 </body>

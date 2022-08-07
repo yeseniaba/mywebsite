@@ -44,6 +44,10 @@ h1 > p {
   font-size: 20px;
 }
 
+.sidenav > h1 {
+  font-size: 20px;
+}
+
 p {
 	font-size: 14px;
 	text-align: left;
@@ -234,7 +238,7 @@ h1 {
 }
 
 .sidenav a:hover {
-  color: #f1f1f1;
+  color: #FCA311; 
 }
 
 .code-block {
@@ -265,4 +269,58 @@ h1 {
 
 .product-title {
   font-size: 16px;
+}
+
+h2 {
+  padding-top: 20px;
+  padding-bottom: 50px;
+
+
+}
+
+h3 {
+  padding-top: 20px;
+  padding-bottom: 30px;
+  font-family: monospace;
+  font-size: 20px;
+
+}
+
+.add-pad {
+	color: black;
+	height: 5vh;
+	margin: 0;
+	scroll-margin-top: 10em;
+}
+
+.param-table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th {
+  text-align: left;
+  padding: 5px;
+  border: 1px solid;
+}
+
+td {
+  text-align: left;
+  padding: 5px;
+  border: 1px solid;
+}
+
+.param-table, td, th {
+  border: 1px solid black;
+}
+
+.code-snippet {
+  background-color: lightyellow;
+  color: darkred;
+  display: inline-block;
+  padding: 3px;
+  font-family: monospace;
+  font-weight: bolder;
+  width: auto;
+  border: none;
 }
