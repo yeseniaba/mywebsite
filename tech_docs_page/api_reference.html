@@ -50,6 +50,11 @@
         <h1 id="reference">API Reference</h1>
         <p class="text">The API Reference includes all the technical details requires to integrate with various Omega API services. 
             To make a suggestion, visit our open-source documentation on GitHub [link here].</p>
+        <h5>Base URL</h5>
+        <div class="code-block">https://api.omega.com</div>
+        
+
+        </p>
        
         <hr>
 <!-- // OmegaVoice Section -->
@@ -61,7 +66,8 @@
             fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt 
             mollit anim id est laborum.</p>
     
-        <h3 id="vcreate" class="add-pad">www.omega.com/voice/create</h3>
+     
+            <h4 id="vcreate" class="add-pad"> POST https://api.omega.com/voice/create</h4>
         <p class="text">Create a voice message in the Omega system</p>
         <table class="param-table">
             <tr>
@@ -95,15 +101,15 @@
                 <td>The name assigned to the voice message. Omega recommends using a descriptive or custom name.</td>
             </tr>
         </table>
-        <h4>Request Example</h4>
+        <h5>Request Example</h5>
         <div class="code-block">
             <pre>
-curl https://omega.com/voice/create \
+curl POST https://omega.com/voice/create \
 -d country="CA" \
 -d name="Business Voicemail" \
             </pre>
                     </div>
-        <h3 id="vdelete" class="add-pad">/delete</h3>
+        <h4 id="vdelete" class="add-pad">DELETE https://omega.com/voice/delete</h4>
         <p class="text">Delete a voice message in the Omega system</p>
         <table class="param-table">
             <tr>
@@ -128,7 +134,7 @@ curl https://omega.com/voice/create \
                 <td>Country where the voice message is created.</td>
             </tr>
         </table>
-        <h4>Request Example</h4>
+        <h5>Request Example</h5>
         <div class="code-block">
             <pre>function myFunction(x) {
                     x.classList.toggle("change");
@@ -145,7 +151,7 @@ curl https://omega.com/voice/create \
             ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu 
             fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt 
             mollit anim id est laborum.</p>
-            <h3 id="icreate" class="add-pad">/create</h3>
+            <h4 id="icreate" class="add-pad">POST https://omega.com/identity/create</h4>
             <p class="text">Create a new identity profile in the Omega system</p>
             <table class="param-table">
                 <tr>
@@ -169,13 +175,13 @@ curl https://omega.com/voice/create \
                     <td>Country where the voice message is created.</td>
                 </tr>
             </table>
-            <h4>Request Example</h4>
+            <h5>Request Example</h5>
             <div class="code-block">
                 <pre>function myFunction(x) {
                         x.classList.toggle("change");
                     }</pre>
                         </div>
-            <h3 id="idelete" class="add-pad">/delete</h3>
+            <h4 id="idelete" class="add-pad">DELETE https://omega.com/identity/delete</h4>
             <p class="text">Permanently delete an identity profile in the Omega system</p>
             <table class="param-table">
                 <tr>
@@ -198,7 +204,7 @@ curl https://omega.com/voice/create \
                 </tr>
 
             </table>
-            <h4>Request Example</h4>
+            <h5>Request Example</h5>
             <div class="code-block">
                 <pre>function myFunction(x) {
                         x.classList.toggle("change");
@@ -215,7 +221,7 @@ curl https://omega.com/voice/create \
             fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt 
             mollit anim id est laborum.</p>
 
-            <h3 id="pcreate" class="add-pad">/create</h3>
+            <h4 id="pcreate" class="add-pad">POST https://omega.com/pay/create</h4>
             <p class="text">Make a payment using the Omega system</p>
             <table class="param-table">
                 <tr>
@@ -237,13 +243,13 @@ curl https://omega.com/voice/create \
                 </tr>
 
             </table>
-            <h4>Request Example</h4>
+            <h5>Request Example</h5>
             <div class="code-block">
                 <pre>function myFunction(x) {
                         x.classList.toggle("change");
                     }</pre>
                         </div>
-            <h3 id="pupdate" class="add-pad">/update</h3>
+            <h4 id="pupdate" class="add-pad">PUT https://omega.com/pay/update</h4>
             <p class="text">Update payment information</p>
             <table class="param-table">
                 <tr>
@@ -265,13 +271,13 @@ curl https://omega.com/voice/create \
                 </tr>
 
             </table>
-            <h4>Request Example</h4>
+            <h5>Request Example</h5>
             <div class="code-block">
                 <pre>function myFunction(x) {
                         x.classList.toggle("change");
                     }</pre>
                         </div>
-            <h3 id="pdelete" class="add-pad">/delete</h3>
+            <h4 id="pdelete" class="add-pad">DELETE https://omega.com/pay/delete</h4>
             <p class="text">Delete a payment method</p>
             <table class="param-table">
                 <tr>
@@ -293,7 +299,7 @@ curl https://omega.com/voice/create \
                 </tr>
 
             </table>
-            <h4>Request Example</h4>
+            <h5>Request Example</h5>
             <div class="code-block">
                 <pre>function myFunction(x) {
                         x.classList.toggle("change");
