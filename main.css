@@ -71,7 +71,7 @@ p {
  line-height: 28px;
 }
 
-td {
+tr {
     border: 5px solid black;
     text-align: left;
     border-bottom: none;
