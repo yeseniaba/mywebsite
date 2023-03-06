@@ -71,7 +71,7 @@ p {
  line-height: 28px;
 }
 
-table {
+td {
     border: 5px solid black;
     text-align: left;
     border-bottom: none;
