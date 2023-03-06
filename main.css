@@ -71,9 +71,11 @@ p {
  line-height: 28px;
 }
 
-table, td, th {  
-  border: 1px solid #ddd;
-  text-align: left;
+table, td, th {
+    border: 5px solid black;
+    text-align: left;
+    border-bottom: none;
+    border-top: none;
 }
 
 .main {
