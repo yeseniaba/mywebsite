@@ -612,6 +612,162 @@
       color: var(--text);
     }
 
+
+    /* EXPANDABLE CASE STUDIES */
+
+    .project {
+      cursor: pointer;
+    }
+
+    .project-top {
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+    }
+
+    .project-toggle {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+
+      margin-top: auto;
+      padding-top: 22px;
+
+      color: var(--purple-light);
+
+      font-weight: 600;
+      font-size: 15px;
+    }
+
+    .project-toggle-icon {
+      display: inline-block;
+
+      transition: transform 0.28s ease;
+    }
+
+    .project.expanded .project-toggle-icon {
+      transform: rotate(90deg);
+    }
+
+    .project-details {
+      grid-column: 1 / -1;
+
+      max-height: 0;
+      opacity: 0;
+      overflow: hidden;
+
+      margin-top: -6px;
+
+      border: 1px solid transparent;
+      border-radius: 18px;
+
+      background:
+        linear-gradient(
+          135deg,
+          rgba(90, 35, 145, 0.12),
+          var(--card)
+        );
+
+      transition:
+        max-height 0.45s ease,
+        opacity 0.3s ease,
+        padding 0.35s ease,
+        border-color 0.35s ease,
+        margin 0.35s ease;
+
+      padding: 0 32px;
+    }
+
+    .project-details.open {
+      max-height: 1200px;
+      opacity: 1;
+
+      margin-top: 0;
+      margin-bottom: 8px;
+
+      padding: 32px;
+
+      border-color: var(--border);
+    }
+
+    .case-study-grid {
+      display: grid;
+
+      grid-template-columns: 1fr 1fr;
+
+      gap: 32px;
+    }
+
+    .case-study-section h4 {
+      margin: 0 0 8px;
+
+      color: var(--purple-light);
+
+      font-size: 12px;
+      font-weight: 700;
+
+      letter-spacing: 0.12em;
+
+      text-transform: uppercase;
+    }
+
+    .case-study-section p {
+      margin: 0;
+
+      color: var(--muted);
+
+      font-size: 15px;
+    }
+
+    .case-study-section.full {
+      grid-column: 1 / -1;
+    }
+
+    .skills-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+
+      margin-top: 10px;
+    }
+
+    .skills-row span {
+      padding: 7px 10px;
+
+      border: 1px solid var(--border);
+      border-radius: 999px;
+
+      background: rgba(155, 92, 255, 0.06);
+
+      color: var(--purple-light);
+
+      font-size: 12px;
+    }
+
+    .published-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+
+      margin-top: 24px;
+
+      color: var(--purple-light);
+
+      text-decoration: none;
+
+      font-weight: 700;
+
+      transition:
+        color 0.2s ease,
+        transform 0.2s ease;
+    }
+
+    .published-link:hover {
+      color: var(--text);
+
+      transform: translateX(4px);
+    }
+
     /* ABOUT */
 
     .about-layout {
@@ -844,6 +1000,18 @@
       .contact-box {
         padding: 28px;
       }
+
+      .case-study-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .case-study-section.full {
+        grid-column: auto;
+      }
+
+      .project-details.open {
+        padding: 24px;
+      }
     }
   </style>
 </head>
@@ -953,89 +1121,384 @@
 
       </div>
 
-
       <div class="grid">
 
         <!-- PROJECT 1 -->
 
-        <article class="project">
+        <article
+          class="project"
+          data-project="ransomware"
+          tabindex="0"
+          role="button"
+          aria-expanded="false"
+          aria-controls="ransomware-details"
+        >
 
-          <div class="project-number">
-            01 / RESEARCH
+          <div class="project-top">
+
+            <div class="project-number">
+              01 / REPORT LEADERSHIP
+            </div>
+
+            <h3>
+              ThreatLabz 2025 Ransomware Report
+            </h3>
+
+            <p>
+              Helped lead a major research report spanning telemetry,
+              ransomware leak-volume analysis, data validation, and
+              executive-level review.
+            </p>
+
+            <div class="project-toggle">
+              Explore case study
+              <span class="project-toggle-icon">→</span>
+            </div>
+
           </div>
-
-          <h3>
-            Technical Research Report
-          </h3>
-
-          <p>
-            Developed and edited research-driven technical content,
-            strengthening structure, argumentation, and readability while
-            preserving the underlying technical detail.
-          </p>
-
-          <a
-            href="#"
-            target="_blank"
-          >
-            Inspect research →
-          </a>
 
         </article>
 
 
         <!-- PROJECT 2 -->
 
-        <article class="project">
+        <article
+          class="project"
+          data-project="deepseek"
+          tabindex="0"
+          role="button"
+          aria-expanded="false"
+          aria-controls="deepseek-details"
+        >
 
-          <div class="project-number">
-            02 / EDITORIAL
+          <div class="project-top">
+
+            <div class="project-number">
+              02 / TECHNICAL EDITING
+            </div>
+
+            <h3>
+              DeepSeek Lure Using CAPTCHAs to Spread Malware
+            </h3>
+
+            <p>
+              Identified a major gap in the attack narrative and worked
+              closely with the researcher to reconstruct and rewrite the
+              early attack path.
+            </p>
+
+            <div class="project-toggle">
+              Explore case study
+              <span class="project-toggle-icon">→</span>
+            </div>
+
           </div>
-
-          <h3>
-            Security Research Writing
-          </h3>
-
-          <p>
-            Partnered with technical researchers to transform complex findings
-            into clear narratives designed for technical and industry audiences.
-          </p>
-
-          <a
-            href="#"
-            target="_blank"
-          >
-            Open file →
-          </a>
 
         </article>
 
 
         <!-- PROJECT 3 -->
 
-        <article class="project">
+        <article
+          class="project"
+          data-project="aiml"
+          tabindex="0"
+          role="button"
+          aria-expanded="false"
+          aria-controls="aiml-details"
+        >
 
-          <div class="project-number">
-            03 / STRATEGY
+          <div class="project-top">
+
+            <div class="project-number">
+              03 / RESEARCH SYNTHESIS
+            </div>
+
+            <h3>
+              AI/ML Trends and ChatGPT Usage Analysis
+            </h3>
+
+            <p>
+              Turned a collection of raw findings and supplied data into
+              a focused enterprise story with a clear editorial thesis.
+            </p>
+
+            <div class="project-toggle">
+              Explore case study
+              <span class="project-toggle-icon">→</span>
+            </div>
+
           </div>
 
-          <h3>
-            Executive Communications
-          </h3>
-
-          <p>
-            Distilled technical research and emerging trends into concise
-            strategic insights for senior and executive audiences.
-          </p>
-
-          <a
-            href="#"
-            target="_blank"
-          >
-            View transmission →
-          </a>
-
         </article>
+
+
+        <!-- RANSOMWARE DETAILS -->
+
+        <div
+          class="project-details"
+          id="ransomware-details"
+          data-details="ransomware"
+        >
+
+          <div class="case-study-grid">
+
+            <div class="case-study-section">
+
+              <h4>Overview</h4>
+
+              <p>
+                A comprehensive ransomware research report combining
+                Zscaler telemetry, ransomware leak-volume data, subject
+                matter expertise, and cross-functional production.
+              </p>
+
+            </div>
+
+            <div class="case-study-section">
+
+              <h4>My Role</h4>
+
+              <p>
+                Report lead, technical writer/editor, and research/data
+                contributor working across SMEs, marketing, and design.
+              </p>
+
+            </div>
+
+            <div class="case-study-section full">
+
+              <h4>What I Contributed</h4>
+
+              <p>
+                I worked primarily with two datasets. The first came from
+                Zscaler telemetry and supported the report's industry and
+                country-level findings. I helped interpret the supplied data,
+                identify meaningful trends, write the resulting insights, and
+                guide design decisions about whether maps, charts, or tables
+                would communicate each finding most effectively.
+              </p>
+
+              <p style="margin-top: 14px;">
+                The second dataset focused on ransomware data-leak volume,
+                using ransomware operators' self-reported figures gathered
+                from aggregate sources and leak sites. My role here was more
+                analytical than editorial: I helped clean, validate, and
+                analyze the data using both automated and manual checks so
+                that the report's larger claims were supportable and
+                defensible.
+              </p>
+
+              <p style="margin-top: 14px;">
+                I also helped calculate and develop the report's headline
+                findings. The final report went through review and approval
+                at the highest executive level, including the CSO and CEO.
+              </p>
+
+            </div>
+
+            <div class="case-study-section full">
+
+              <h4>Skills Demonstrated</h4>
+
+              <div class="skills-row">
+                <span>Research leadership</span>
+                <span>Data analysis</span>
+                <span>Data validation</span>
+                <span>Editorial judgment</span>
+                <span>Cross-functional collaboration</span>
+              </div>
+
+              <a
+                class="published-link"
+                href="https://www.zscaler.com/resources/industry-reports/threatlabz-2025-ransomware-analysis.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                View published report ↗
+              </a>
+
+            </div>
+
+          </div>
+
+        </div>
+
+
+        <!-- DEEPSEEK DETAILS -->
+
+        <div
+          class="project-details"
+          id="deepseek-details"
+          data-details="deepseek"
+        >
+
+          <div class="case-study-grid">
+
+            <div class="case-study-section">
+
+              <h4>Overview</h4>
+
+              <p>
+                A technical threat-research article examining a DeepSeek-themed
+                lure that used fake CAPTCHA interactions as part of a malware
+                delivery chain.
+              </p>
+
+            </div>
+
+            <div class="case-study-section">
+
+              <h4>My Role</h4>
+
+              <p>
+                Technical editor and co-author, with significant involvement
+                in restructuring and rewriting the attack flow.
+              </p>
+
+            </div>
+
+            <div class="case-study-section full">
+
+              <h4>What I Contributed</h4>
+
+              <p>
+                The researcher had developed strong payload analysis, but the
+                draft moved too quickly into the malware itself and did not
+                sufficiently explain how a user encountered the threat or how
+                the attack progressed to that point.
+              </p>
+
+              <p style="margin-top: 14px;">
+                I flagged the missing context as a structural issue and worked
+                closely with the researcher to unpack the beginning of the
+                attack path: how the lure worked, how the user encountered it,
+                and how the initial interaction led to malware execution.
+                My involvement expanded well beyond line editing, and I
+                substantially rewrote and reorganized portions of the article
+                so readers could follow the full attack sequence. Because of
+                the extent of that contribution, I was credited as a co-author.
+              </p>
+
+            </div>
+
+            <div class="case-study-section full">
+
+              <h4>Skills Demonstrated</h4>
+
+              <div class="skills-row">
+                <span>Technical editing</span>
+                <span>Narrative structure</span>
+                <span>Threat research communication</span>
+                <span>SME collaboration</span>
+              </div>
+
+              <a
+                class="published-link"
+                href="https://www.zscaler.com/blogs/security-research/deepseek-lure-using-captchas-spread-malware"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                View published article ↗
+              </a>
+
+            </div>
+
+          </div>
+
+        </div>
+
+
+        <!-- AI/ML DETAILS -->
+
+        <div
+          class="project-details"
+          id="aiml-details"
+          data-details="aiml"
+        >
+
+          <div class="case-study-grid">
+
+            <div class="case-study-section">
+
+              <h4>Overview</h4>
+
+              <p>
+                A research analysis examining enterprise AI/ML trends and
+                generative AI usage using findings and data supplied by
+                the research team.
+              </p>
+
+            </div>
+
+            <div class="case-study-section">
+
+              <h4>My Role</h4>
+
+              <p>
+                Writer and editor, with editorial leadership on narrative
+                development and audience framing.
+              </p>
+
+            </div>
+
+            <div class="case-study-section full">
+
+              <h4>What I Contributed</h4>
+
+              <p>
+                The research team initially provided a large set of findings
+                and data points without a cohesive story or clear hierarchy.
+                I worked with the researchers to identify the trends that
+                would matter most to an enterprise audience.
+              </p>
+
+              <p style="margin-top: 14px;">
+                I helped prioritize angles such as the growth and popularity
+                of generative AI tools, including ChatGPT and Drift, because
+                enterprise adoption and usage patterns were particularly
+                relevant to Zscaler's customers. I then wrote and edited the
+                article around the selected findings, and turned supplied numbers
+                into a coherent story rather than a collection of disconnected
+                statistics.
+              </p>
+
+              <p style="margin-top: 14px;">
+                I did not have direct access to the raw telemetry service.
+                Researchers supplied the underlying figures and validated my
+                technical interpretations and data-driven claims throughout
+                the writing process.
+              </p>
+
+            </div>
+
+            <div class="case-study-section full">
+
+              <h4>Skills Demonstrated</h4>
+
+              <div class="skills-row">
+                <span>Research synthesis</span>
+                <span>Editorial judgment</span>
+                <span>Audience awareness</span>
+                <span>Data storytelling</span>
+                <span>Technical writing</span>
+                <span>SME collaboration</span>
+              </div>
+
+              <a
+                class="published-link"
+                href="https://www.zscaler.com/blogs/security-research/analysis-generative-ai-trends-and-chatgpt-usage"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                View published article ↗
+              </a>
+
+            </div>
+
+          </div>
+
+        </div>
 
       </div>
 
@@ -1254,6 +1717,70 @@
         updateIcon();
       }
     );
+
+
+
+    /* EXPANDABLE PROJECT CARDS */
+
+    const projectCards =
+      document.querySelectorAll(".project[data-project]");
+
+    const projectDetails =
+      document.querySelectorAll(".project-details[data-details]");
+
+    function closeAllProjects() {
+
+      projectCards.forEach((card) => {
+        card.classList.remove("expanded");
+        card.setAttribute("aria-expanded", "false");
+      });
+
+      projectDetails.forEach((details) => {
+        details.classList.remove("open");
+      });
+    }
+
+    function toggleProject(card) {
+
+      const projectName =
+        card.getAttribute("data-project");
+
+      const details =
+        document.querySelector(
+          `.project-details[data-details="${projectName}"]`
+        );
+
+      const isOpen =
+        card.classList.contains("expanded");
+
+      closeAllProjects();
+
+      if (!isOpen) {
+        card.classList.add("expanded");
+        card.setAttribute("aria-expanded", "true");
+        details.classList.add("open");
+      }
+    }
+
+    projectCards.forEach((card) => {
+
+      card.addEventListener("click", () => {
+        toggleProject(card);
+      });
+
+      card.addEventListener("keydown", (event) => {
+
+        if (
+          event.key === "Enter" ||
+          event.key === " "
+        ) {
+          event.preventDefault();
+          toggleProject(card);
+        }
+
+      });
+
+    });
 
 
     /* FOOTER EASTER EGG */
