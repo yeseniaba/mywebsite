@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Your Name | Technical Editor & Writer</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: #f7f7f7;
+      color: #222;
+      line-height: 1.6;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 40px 24px;
+    }
+
+    header {
+      padding: 70px 0 50px;
+      border-bottom: 1px solid #ddd;
+    }
+
+    h1 {
+      font-size: 48px;
+      margin: 0 0 10px;
+    }
+
+    .headline {
+      font-size: 22px;
+      color: #555;
+      margin-bottom: 20px;
+    }
+
+    .intro {
+      max-width: 700px;
+      font-size: 18px;
+    }
+
+    section {
+      padding: 50px 0;
+      border-bottom: 1px solid #ddd;
+    }
+
+    h2 {
+      font-size: 30px;
+      margin-bottom: 25px;
+    }
+
+    .project {
+      background: white;
+      padding: 24px;
+      margin-bottom: 20px;
+      border-radius: 8px;
+      border: 1px solid #e3e3e3;
+    }
+
+    .project h3 {
+      margin-top: 0;
+    }
+
+    .project a {
+      color: #0057b8;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .project a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      padding: 40px 0;
+      color: #666;
+      font-size: 14px;
+    }
+
+    .contact-links a {
+      margin-right: 18px;
+      color: #0057b8;
+      text-decoration: none;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+
+    <header>
+      <h1>Your Name</h1>
+
+      <div class="headline">
+        Technical Editor & Writer | Research Communications & Editorial Strategy
+      </div>
+
+      <p class="intro">
+        I work at the intersection of technical research, editorial strategy,
+        and cybersecurity. I help researchers turn complex technical work into
+        clear, rigorous, and compelling content for technical and executive audiences.
+      </p>
+    </header>
+
+    <section>
+      <h2>Selected Work</h2>
+
+      <div class="project">
+        <h3>Technical Research Report</h3>
+
+        <p>
+          Edited and developed research-driven cybersecurity content,
+          translating complex technical findings into clear narratives while
+          preserving technical accuracy.
+        </p>
+
+        <a href="#" target="_blank">View project →</a>
+      </div>
+
+      <div class="project">
+        <h3>Security Research Blog</h3>
+
+        <p>
+          Collaborated with security researchers to structure technical analysis,
+          strengthen arguments, and make research accessible to broader audiences.
+        </p>
+
+        <a href="#" target="_blank">Read article →</a>
+      </div>
+
+      <div class="project">
+        <h3>Executive Research Communications</h3>
+
+        <p>
+          Developed executive-facing content that distilled cybersecurity trends,
+          threat intelligence, and technical findings into concise strategic insights.
+        </p>
+
+        <a href="#" target="_blank">View example →</a>
+      </div>
+
+    </section>
+
+    <section>
+      <h2>About</h2>
+
+      <p>
+        My background combines technical writing, cybersecurity research
+        communications, editorial strategy, and content operations. I enjoy
+        working closely with technical experts to sharpen ideas, challenge
+        assumptions, and make complex arguments easier to evaluate.
+      </p>
+    </section>
+
+    <section>
+      <h2>Contact</h2>
+
+      <div class="contact-links">
+        <a href="https://www.linkedin.com/" target="_blank">LinkedIn</a>
+        <a href="https://github.com/" target="_blank">GitHub</a>
+      </div>
+    </section>
+
+    <footer>
+      © 2026 Your Name
+    </footer>
+
+  </div>
+
+</body>
+</html>
